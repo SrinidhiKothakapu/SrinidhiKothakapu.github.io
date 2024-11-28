@@ -9,7 +9,7 @@
             margin:0px;
         }
         .header {
-            display: flex;  justify-content: space-between; align-items: center;
+            display: flex;  justify-content: space-between; align-items: center; width:100%;
         }
         li{
             display:inline-block; list-style-type: none;  padding:10px;
@@ -21,17 +21,20 @@
             text-decoration: underline;
         }
         .row1{
-            display:flex; justify-content: center; justify-content: space-around;
+            display:flex; justify-content: center; justify-content: space-around; width:100%;
         }
         .box{
+            background-color: beige;
             margin:10px;
+            border:  5px ;
+            padding:10px;
         }
     </style>
 </head>
 <body>
-    <div>
-        <div class="header" style="background-color: #58d68d;">
-            <div> <h1 style="color:black;">My Online Store</h1></div>
+    <div class="container" style="background-color: #6C9A8B; width:100%">
+        <div class="header" style="background-color: #6C9A8B;">
+            <div> <h1 style="color:rgb(67, 2, 2);">My Online Store</h1></div>
             <div>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -42,15 +45,23 @@
             </div>
         </div>
 
-        <div class="row1">
+        <div class="row1" style="background-color: #6C9A8B;">
             <div class="box">
-                <img src="/Online Store/assets/images/Double-ka-Meetha.jpg" width="500px"><br>
-                Product 1
+                <img src="/Online Store/assets/images/Double-ka-Meetha.jpg" width="500px" height="350px">
+                <h3 style="color:rgb(67, 2, 2);">DOUBLE-KA-MEETA</h3>
+                <p>Indian bread pudding sweet</p>
             </div>
 
-            <div class="box">Product 2</div>
+            <div class="box">
+                <img src="/Online Store/assets/images/rasagulla.jpg" width="500px" height="350px">
+                <h3 style="color:rgb(67, 2, 2);">RASAGULLA</h3>
+                <p>a syrupy dessert popular in the eastern part of South Asia</p>
+            </div>
 
-            <div class="box">Product 3</div>
+            <div class="box">
+                <img src="/Online Store/assets/images/Rasmalai.jpg" width="500px" height="350px">
+                <h3 style="color:rgb(67, 2, 2);">RAS-MALAI</h3>
+            </div>
         </div>
 
         <div></div>
