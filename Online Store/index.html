@@ -1,72 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Store</title>
     <style>
-        body{
-            margin:0px;
-        }
-        .header {
-            display: flex;  justify-content: space-between; align-items: center; width:100%;
-        }
-        li{
-            display:inline-block; list-style-type: none;  padding:10px;
-        }
-        a{
-            text-decoration: none;
-        }
-        a:hover{
-            text-decoration: underline;
-        }
-        .row1{
-            display:flex; justify-content: center; justify-content: space-around; width:100%;
-        }
-        .box{
-            background-color: beige;
-            margin:10px;
-            border:  5px ;
-            padding:10px;
-        }
+      body {
+        margin: 0px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 10px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .row1 {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        width: 100%;
+      }
+      .box {
+        background-color: beige;
+        margin: 10px;
+        border: 10px;
+        padding: 10px;
+        width: 300px;
+      }
     </style>
-</head>
-<body>
-    <div class="container" style="background-color: #6C9A8B; width:100%">
-        <div class="header" style="background-color: #6C9A8B;">
-            <div> <h1 style="color:rgb(67, 2, 2);">My Online Store</h1></div>
-            <div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </div>
+  </head>
+  <body>
+    <div class="container" style="background-color: #6c9a8b; width: 100%">
+      <div class="header" style="background-color: #6c9a8b">
+        <div><h1 style="color: rgb(67, 2, 2)">My Online Store</h1></div>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row1" style="background-color: #6c9a8b">
+        <div class="box">
+          <img
+            src="/Online Store/assets/images/Double-ka-Meetha.jpg"
+            width="300px"
+            height="300px"
+          />
+          <h3 style="color: rgb(67, 2, 2)">DOUBLE-KA-MEETA</h3>
+          <p>Indian bread pudding sweet</p>
+           Price: $45 <br>
+           <button>Add to cart</button>
         </div>
 
-        <div class="row1" style="background-color: #6C9A8B;">
-            <div class="box">
-                <img src="/Online Store/assets/images/Double-ka-Meetha.jpg" width="500px" height="350px">
-                <h3 style="color:rgb(67, 2, 2);">DOUBLE-KA-MEETA</h3>
-                <p>Indian bread pudding sweet</p>
-            </div>
-
-            <div class="box">
-                <img src="/Online Store/assets/images/rasagulla.jpg" width="500px" height="350px">
-                <h3 style="color:rgb(67, 2, 2);">RASAGULLA</h3>
-                <p>a syrupy dessert popular in the eastern part of South Asia</p>
-            </div>
-
-            <div class="box">
-                <img src="/Online Store/assets/images/Rasmalai.jpg" width="500px" height="350px">
-                <h3 style="color:rgb(67, 2, 2);">RAS-MALAI</h3>
-            </div>
+        <div class="box">
+          <img
+            src="/Online Store/assets/images/rasagulla.jpg"
+            width="300px"
+            height="300px"
+          />
+          <h3 style="color: rgb(67, 2, 2)">RASAGULLA</h3>
+          <p>A syrupy dessert popular in the eastern part of South Asia</p>
         </div>
 
+        <div class="box">
+          <img
+            src="/Online Store/assets/images/Rasmalai.jpg"
+            width="300px"
+            height="300px"
+          />
+          <h3 style="color: rgb(67, 2, 2)">RAS-MALAI</h3>
+          <p>
+            A delightful sweet made from soft and spongy cottage cheese
+            dumplings
+          </p>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div><img></div>
         <div></div>
-        <div></div>
-        <div></div>
+      </div>
+      <div></div>
+      <div></div>
     </div>
-</body>
+  </body>
 </html>
