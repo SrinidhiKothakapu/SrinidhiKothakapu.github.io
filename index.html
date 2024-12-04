@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SRINIDHI KOTHAKAPU</title>
   <style>
+    .c{
+      background-image: url(/assets/images/1.jpg) ;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     .container {
       position: fixed;
       overflow: auto;
@@ -47,11 +54,15 @@
     .row {
       padding: 100px;
       height: 75%;
+      
     }
 
     .row .box {
       padding: 20px;
       margin: 10px;
+      width: 45%;
+      height: 55%;
+      
     }
 
     .footer {
@@ -74,9 +85,10 @@
 
 <body>
   <div class="container" style="background-color: rgb(218, 239, 192);">
+    <div class="c">
     <div class="header-row" style="background-color: rgb(226, 217, 150);">
       <div class="box">
-        <h1 style="color: brown;">SRINIDHI KOTHAKAPU</h1>
+        <h1 style="color: brown; font-family: courier;">SRINIDHI KOTHAKAPU</h1>
       </div>
       <div class="box">
         <ul>
@@ -92,15 +104,15 @@
 
     <div class="row" id="home">
       <div style="display: flex;padding-top: 50px;">
-        <div class="box">
-          <h1>Full Stack Developer</h1>
-          <p>
+        <div class="box" >
+          <h1 style="color: rgb(20, 20, 13);">Full Stack Developer</h1>
+          <p style="color: rgb(1, 11, 11);">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
             neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
             quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
             perferendis assumenda?
           </p>
-          <p>
+          <p style="color: rgb(1, 11, 11);">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
             neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
             quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
@@ -109,16 +121,18 @@
           <button>Button 1</button>
           <button>Button 1</button>
         </div>
-        <div class="box">
+        <!-- <div class="box">
           <img src="https://picsum.photos/id/2/400/400" />
-        </div>
+        </div> -->
       </div>
     </div>
-
-    <div id="projects" class="row" style="background-color: lightcoral">
+    </div>
+    <div id="projects" class="row" style="background-image: url(/assets/images/2.avif);background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
       <h1>Projects</h1>
-      <div style="display: flex">
-        <div class="box">
+      <div style="display: flex; ">
+        <div class="box" style="border:1px solid black; background-color: rgb(243, 196, 255);">
           <a href="https://srinidhikothakapu.github.io/Online-store/">Online Store</a>
           <p>
             "Sweet Delights – Your Destination for Authentic Indian Sweets"
@@ -129,7 +143,7 @@
           </p>
         </div>
 
-        <div class="box">
+        <div class="box" style="border:1px solid black; background-color: rgb(243, 196, 255);">
           <h3>Project 2</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
@@ -139,7 +153,7 @@
           </p>
         </div>
 
-        <div class="box">
+        <div class="box" style="border:1px solid black; background-color: rgb(243, 196, 255);">
           <h3>Project 3</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
