@@ -6,247 +6,183 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SRINIDHI KOTHAKAPU</title>
   <style>
-    .c{
-      background-image: url(assets/images/1.jpg) ;
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+    .c {
+      background-image: url('./assets/images/1.jpg');
       height: 100%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
     .container {
-      position: fixed;
+      position: relative;
       overflow: auto;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      scroll-behavior: smooth;
       height: 100%;
+      background-color: black;
     }
-
     .header-row {
-      background-color: rgb(20, 24, 2);
+      background-color: #007acc;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
-      top: 0px;
-    }
-
-    .header-row .box {
+      top: 0;
+      z-index: 1000;
       padding: 10px;
     }
-
-    .header-row li {
-      display: inline;
-      padding: 5px;
-      font-size: larger;
+    .header-row h1 {
+      color: #ffffff;
+      /* font-family: courier; */
     }
-
+    .header-row ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
     .header-row a {
       text-decoration: none;
+      color: white;
     }
-
     .header-row a:hover {
       text-decoration: underline;
     }
-
     .row {
       padding: 100px;
-      height: 75%;
-      
+      height: auto;
     }
-
     .row .box {
       padding: 20px;
       margin: 10px;
       width: 45%;
-      height: 55%;
-      
+      height: auto;
+      background-color: #2d2d2d;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
-
     .footer {
       padding: 20px;
-      margin: 0px;
-      background-color: black;
+      background-color: #007acc;
       color: white;
       font-size: large;
+      text-align: center;
     }
-
     button {
-      background-color: teal;
+      background-color: #569cd6;
       padding: 10px;
       color: white;
       border: none;
-      border-radius: 10%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3e8ac9;
+    }
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .box {
+      border: 1px solid #000000;
+      background-color: #000000;
+      flex: 1 1 30%;
+      min-width: 250px;
+    }
+
+    .upload-box {
+      width: 45%;
+      height: auto;
+      background-image: url(/SrinidhiKothakapu.github.io/assets/images/1.avif);
+      border-radius: 10px;
+      padding: 20px;
+      border-color: 5px whitesmoke;
+      /* border: 5px; */
+      margin-left: 20px;
+      text-align: center;
+    }
+    .upload-box input {
+      display: block;
+      margin: 10px auto;
     }
   </style>
 </head>
 
 <body>
-  <div class="container" style="background-color: rgb(218, 239, 192);">
+  <div class="container">
     <div class="c">
-    <div class="header-row" style="background-color:rgb(255, 254, 254)">
-      <div class="box">
-        <h1 style="color:rgb(88, 51, 6); font-family: 'Times New Roman', Times, serif;">SRINIDHI KOTHAKAPU</h1>
-      </div>
-      <div class="box">
+      <div class="header-row">
+        <h1>SRINIDHI KOTHAKAPU</h1>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
-
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
-
     <div class="row" id="home">
-      <div style="display: flex;padding-top: 50px;">
-        <div class="box" >
-          <h1 style="color: rgb(20, 20, 13);">Full Stack Developer</h1>
-          <!-- <p style="color: rgb(1, 11, 11);">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
-            quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
-            perferendis assumenda?
-          </p> -->
-          <p style="color: rgb(1, 11, 11);">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
-            quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
-            perferendis assumenda?
-          </p>
-          <button>Button 1</button>
-          <button>Button 1</button>
+      <div style="display: flex; padding-top: 50px;">
+        <div class="box">
+          <h1>Full Stack Developer</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <button>Learn More</button>
+          <button>Contact</button>
         </div>
-        <!-- <div class="box">
-          <img src="https://picsum.photos/id/2/400/400" />
-        </div> -->
+        <div class="upload-box">
+          <image>
+            <source src="/SrinidhiKothakapu.github.io/assets/images/2.avif">
+          </image>
+        </div>
       </div>
     </div>
-    </div>
-    <div id="projects" class="row" style="background-image: url(/assets/images/2.avif);background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;">
+    <div id="projects" class="row" style="background-color: #000000;">
       <h1>Projects</h1>
-      <div style="display: flex; ">
-        <div class="box" style="border:1px solid black; background-color: rgb(243, 196, 255);">
+      <div class="projects-container">
+        <div class="box">
           <a href="https://srinidhikothakapu.github.io/Online-store/">Online Store</a>
-          <p>
-            "Sweet Delights – Your Destination for Authentic Indian Sweets"
-            Discover a world of indulgence at Sweet Delights, your one-stop online store for the finest traditional
-            Indian sweets. From the rich, creamy Ramalai to the spongy Rasgulla and royal Double Ka Meetha, our curated
-            selection brings you the best of Indian desserts. Perfect for any celebration or to satisfy your sweet
-            cravings, each treat is crafted with care and the finest ingredients.
-          </p>
+          <p>"Sweet Delights – Your Destination for Authentic Indian Sweets"...</p>
         </div>
-
-        <div class="box" style="border:1px solid black; background-color: rgb(243, 196, 255);">
+        <div class="box">
           <h3>Project 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-            Perspiciatis, ab.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur...</p>
         </div>
-
-        <div class="box" style="border:1px solid black; background-color: rgb(243, 196, 255);">
+        <div class="box">
           <h3>Project 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-            Perspiciatis, ab.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur...</p>
         </div>
       </div>
     </div>
-    <div id="services" class="row" style="background-color: lightblue">
-      <h1>Services</h1>
-      <div style="display: flex">
-        <div class="box">
-          <h3>Web App Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-            Perspiciatis, ab.
-          </p>
-        </div>
-
-        <div class="box">
-          <h3>Mobile App Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-            Perspiciatis, ab.
-          </p>
-        </div>
-
-        <div class="box">
-          <h3>Backend Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-            Perspiciatis, ab.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div id="about" class="row">
-      <h1>About</h1>
-      <h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
-        optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
-        ipsa veniam deserunt asperiores nesciunt at provident itaque
-        cupiditate vel dolor.
-      </h3>
-      <h2>Skills</h2>
-      <h3>Java, Python, Reactjs</h3>
-      <p>Display the logo of all the technologies you know.</p>
-    </div>
-    <div id="contact" class="row" style="background-color: lightgoldenrodyellow">
+    <div id="contact" class="row" style="background-color: #000000">
       <h1>Contact</h1>
       <div style="display: flex">
-
-
         <div class="box">
           <h3>Contact Form</h3>
-          <p>
-            <input type="text" placeholder="Enter Name">
-          </p>
-          <p>
-            <input type="email" placeholder="Enter Email">
-          </p>
-          <p>
-            <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
-          </p>
+          <p><input type="text" placeholder="Enter Name" required></p>
+          <p><input type="email" placeholder="Enter Email" required></p>
+          <p><textarea rows="5" cols="40" placeholder="Enter message" required></textarea></p>
           <button>Send</button>
         </div>
-
         <div class="box">
           <h3>Your/Company Name</h3>
-          <p>
-            <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-            Perspiciatis, ab.
-          </p>
-          <p>
-            <b>Email Address: </b>sample@email.com
-          </p>
-          <p>
-            <b>Phone Number: </b>+91 343 445 6789
-          </p>
+          <p><b>Address:</b> Lorem ipsum dolor sit amet...</p>
+          <p><b>Email Address:</b> sample@email.com</p>
+          <p><b>Phone Number:</b> +91 343 445 6789</p>
         </div>
       </div>
     </div>
-    <div class="footer">@copyright 2024. All rights reserved.</div>
+    <div class="footer">&copy; 2024. All rights reserved.</div>
   </div>
 </body>
 
