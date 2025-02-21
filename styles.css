@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  .c {
+    background-image: url('./assets/images/1.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    background-color: black;
+  }
+  .header-row {
+    background-color: #007acc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+  }
+  .header-row h1 {
+    color: #ffffff;
+    /* font-family: courier; */
+  }
+  .header-row ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .header-row a {
+    text-decoration: none;
+    color: white;
+  }
+  .header-row a:hover {
+    text-decoration: underline;
+  }
+  .row {
+    padding: 100px;
+    height: auto;
+  }
+  .row .box {
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    height: auto;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .footer {
+    padding: 20px;
+    background-color: #007acc;
+    color: white;
+    font-size: large;
+    text-align: center;
+  }
+  button {
+    background-color: #569cd6;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #3e8ac9;
+  }
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .box {
+    border: 1px solid #000000;
+    background-color: #000000;
+    flex: 1 1 30%;
+    min-width: 250px;
+  }
+
+  .upload-box {
+    width: 45%;
+    height: auto;
+    /* background-image: url(/SrinidhiKothakapu.github.io/assets/images/1.avif); */
+    border-radius: 10px;
+    padding: 20px;
+    border-color: 5px whitesmoke;
+    /* border: 5px; */
+    margin-left: 20px;
+    text-align: center;
+  }
+  .upload-box input {
+    display: block;
+    margin: 10px auto;
+  }
