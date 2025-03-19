@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
   }
+  :a{
+    color: wheat;
+  }
   body {
     margin: 0;
     font-family: Arial, sans-serif;
