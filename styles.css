@@ -1,8 +1,17 @@
 html {
     scroll-behavior: smooth;
   }
-  :a{
-    color: wheat;
+  a:link{
+    color: #79c3ff;
+  }
+  a:visited{
+    color: #bb5b5b;
+  }
+  a:hover{
+    color: bisque
+  }
+  a:active{
+    color: #ff0000;
   }
   body {
     margin: 0;
