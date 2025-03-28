@@ -1,97 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SRINIDHI KOTHAKAPU</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .card:hover{
+            transform: translateY(-10px);
+            transition: transform  0.1s;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+        color: #79c3ff;
+        }
+        a:visited{
+            color: #bb5b5b;
+        }
+        a:hover{
+            color: bisque
+        }
+        a:active{
+            color: #ff0000;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="c">
-      <div class="header-row">
-        <h1>SRINIDHI KOTHAKAPU</h1>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+    <div class="container-fluid">
+        <!-- r1 -->
+        <div class="row bg-success-sub text-success p-3">
+            <div class="d-flex justify-content-between">
+            <div>
+                <h1>SRINIDHI KOTHAKAPU</h1>
+            </div>
+            <div>
+                <p>Home|About|contact</p>
+            </div>
+        </div>
     </div>
-    <div class="row" id="home">
-      <div style="display: flex; padding-top: 50px;">
-        <img src="assets/images/pro.png" alt="picture" style="border-radius: 50%;">
-        <div class="box">
-          
-          <h1>SrinidhiKothakapu</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita eos repellendus voluptatem nihil ullam optio libero possimus nostrum.</p>
-          <button>Learn More</button>
-          <button>Contact</button>
-        </div>
-        <div class="upload-box">
-          <image>
-            <source src="/SrinidhiKothakapu.github.io/assets/images/2.avif">
-          </image>
-        </div>
-      </div>
-    </div>
-    <div id="projects" class="row" style="background-color: #000000;">
-      <h1>Projects</h1>
-      <div class="projects-container">
-        <div class="box">
-          <a href="https://srinidhikothakapu.github.io/Online-store/">DIVINE DESSERTS</a>
-          <p>"Sweet Delights – Your Destination for Authentic Indian Sweets"...</p>
-        </div>
-        <div class="box">
-          <a href="https://srinidhikothakapu.github.io/mybank/">INDIAN BANK</a>
-          <p>This web application provides a simple and user-friendly banking interface, allowing users to register, log in, and manage their transactions</p>
-        </div>
-        <div class="box">
-          <a href="https://srinidhikothakapu.github.io/mystore/">My Store</a>
-          <p>A store web apaplication created with json</p>
-        </div>
-        <div class="box">
-          <a href="https://srinidhikothakapu.github.io/temp/temp23.html">portfolio</a>
-          <p>portfolio web application with the help of bootstrap</p>
-        </div>
-        <div class="box">
-          <a href="https://srinidhikothakapu.github.io/socialmedia/">Social media</a>
-          <p>Social media application which consists of your posts and and all the user's posts</p>
-        </div>
-        <div class="box">
-          <a href="https://srinidhikothakapu.github.io/testApp/">React_Store</a>
-          <p>store's frontend with react</p>
-        </div>
-        <div class="box">
-          <a href="https://srinidhikothakapu.github.io/todo_list/">ToDo List</a>
-          <p>Your To-Do List web application is a simple and interactive task manager that allows users to add tasks dynamically and delete them.</p>
-        </div>
-        
-      </div>
-    </div>
-    <div id="contact" class="row" style="background-color: #000000">
-      <h1>Contact</h1>
-      <div style="display: flex">
-        <div class="box">
-          <h3>Contact Form</h3>
-          <p><input type="text" placeholder="Enter Name" required></p>
-          <p><input type="email" placeholder="Enter Email" required></p>
-          <p><textarea rows="5" cols="40" placeholder="Enter message" required></textarea></p>
-          <button>Send</button>
-        </div>
-        <div class="box">
-          <h3>Your/Company Name</h3>
-          <p><b>Address:</b> Lorem ipsum dolor sit amet...</p>
-          <p><b>Email Address:</b> sample@email.com</p>
-          <p><b>Phone Number:</b> +91 343 445 6789</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer">&copy; 2024. All rights reserved.</div>
-  </div>
-</body>
+    <!-- r2 -->
+    <div class="row  bg-light">
+        <div class="row" id="home">
+            <div style="display: flex; padding-top: 50px;">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img src="pp.png" alt="picture" style="border-radius: 50%; max-width: 100%; height: auto;">
+                </div>
+              <div class="col-lg-6">
+                
+                <h1>Srinidhi Kothakapu</h1>
+                <p>Hi, I’m Srinidhi, a front-end developer in the making! Passionate about crafting responsive, and user-friendly web experiences, I’m honing my skills to turn ideas into perfect designs.</p>
+                <button class="btn btn-outline-success" ><a href="#contact" style="text-decoration: none;">Contact</a></button>
+              </div>
+              <div class="upload-box">
+                <image>
+                  <source src="/SrinidhiKothakapu.github.io/assets/images/2.avif">
+                </image>
+              </div>
+            </div>
+          </div>
+        </div><br>
+       
 
+    </div>
+    <!-- r3 -->
+    <div class="row mt-5 bg-success text-center">
+        <h1 class="text-light p-3">KEY SKILLS</h1>
+        <div class="col-lg-3 ">
+            <div class="bg-light m-5 p-5 rounded-circle">HTML</div>
+        </div>
+        <div class="col-lg-3 ">
+            <div class="bg-light m-5 p-5 rounded-circle">CSS</div>
+        </div>
+        <div class="col-lg-3 ">
+            <div class="bg-light m-5 p-5 rounded-circle">Javascript</div>
+        </div>
+        <div class="col-lg-3 ">
+            <div class="bg-light m-5 p-5 rounded-circle">React</div>
+        </div>
+    </div>
+<!-- r4 -->
+    <div class="row p-5 bg-light text-center">
+        <h1 class="text-success text-center p-3"><b>MY PROJECTS</b></h1>
+        <div class="col-lg-4 ">
+            <div class="card p-3 border border-success bg-light">
+                <img class="border border-success rounded" src="os.png"/>
+                <div class="card-body">
+                    <div class="card-title text-center"><h3 class="text-success"><b>Divine Desserts</b></h3></div>
+                    <div class="card-text">
+                        <p>Sweet Delights – Your Destination for Authentic Indian Sweets"...</p>
+                    </div>
+                    <button class="btn btn-outline-success"><a href="https://srinidhikothakapu.github.io/Online-store/" style="text-decoration: none;">Click me</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 ">
+            <div class="card p-3 border border-success bg-light">
+                <img  src="bank.png" class="border border-success rounded"/>
+                <div class="card-body">
+                    <div class="card-title text-center"><h3 class="text-success"><b>My Bank</b></h3></div>
+                    <div class="card-text">
+                        <p>This web application provides a simple and user-friendly banking interface, allowing users to register, log in, and manage their transactions</p>
+                    </div>
+                    <button class="btn btn-outline-success"><a href="https://srinidhikothakapu.github.io/mybank/" style="text-decoration: none;">Click me</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 ">
+            <div class="card p-3 border border-success bg-light">
+                <img  src="td.png" class="border border-success rounded"/>
+                <div class="card-body">
+                    <div class="card-title text-center"><h3 class="text-success"><b>TO-DO List</b></h3></div>
+                    <div class="card-text">
+                        <p>Your To-Do List web application is a simple and interactive task manager that allows users to add tasks dynamically and delete them.</p>
+                    </div>
+                    <button class="btn btn-outline-success"><a href="https://srinidhikothakapu.github.io/todo_list/">Click me</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 ">
+            <div class="card p-3 border border-success bg-light">
+                <img  src="mystore.png" class="border border-success rounded"/>
+                <div class="card-body">
+                    <div class="card-title text-center"><h3 class="text-success"><b>My Store</b></h3></div>
+                    <div class="card-text">
+                        <p>A store web apaplication created with json</p>
+                    </div>
+                    <button class="btn btn-outline-success"><a href="https://srinidhikothakapu.github.io/mystore/" style="text-decoration: none;">Click me</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 ">
+            <div class="card p-3 border border-success bg-light">
+                <img  src="rs.png" class="border border-success rounded"/>
+                <div class="card-body">
+                    <div class="card-title text-center"><h3 class="text-success"><b>React_Store</b></h3></div>
+                    <div class="card-text">
+                        <p>store's frontend with react</p>
+                    </div>
+                    <button class="btn btn-outline-success"><a href="https://srinidhikothakapu.github.io/testApp/" style="text-decoration: none;">Click me</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 ">
+            <div class="card p-3 border border-success bg-light">
+                <img  src="sm.png" class="border border-success rounded"/>
+                <div class="card-body">
+                    <div class="card-title text-center"><h3 class="text-success"><b>Social media</b></h3></div>
+                    <div class="card-text">
+                        <p>Social media application which consists of your posts and and all the user's posts</p>
+                    </div>
+                    <button class="btn btn-outline-success"><a href="https://srinidhikothakapu.github.io/socialmedia/" style="text-decoration: none;">Click me</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 ">
+            <div class="card p-3 border border-success bg-light">
+                <img  src="pf.png" class="border border-success rounded"/>
+                <div class="card-body">
+                    <div class="card-title text-center"><h3 class="text-success"><b>portfolio</b></h3></div>
+                    <div class="card-text">
+                        <p>portfolio web application with the help of bootstrap.</p>
+                    </div>
+                    <button class="btn btn-outline-success"><a href="https://srinidhikothakapu.github.io/temp/temp23.html" style="text-decoration: none;">Click me</a></button>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <!-- r5 -->
+    <div id="contact" class="p-3 border border-success bg-light" style="color: rgb(117, 19, 19);">
+        <p>Email: srinidhikothakapu@gmail.com</p>
+        <p>Mobile no.: +91 8106829504</p>
+        <p>Address: Hyderabad, India, 500045.</p>
+    </div><br>
+    <!-- r6 -->
+    <div class="row bg-success text-light p-3 text-center">
+        <p>@copyright 2025.All rights are reserved</p>
+    </div>
+    
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+</body>
 </html>
